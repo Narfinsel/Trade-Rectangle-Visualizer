@@ -149,8 +149,11 @@ void TradeRectVisualizer :: vizHalfHallow (int tradeMagicNum, int tradeTicketNum
                if(doDrawArrows == true)
                   drawArrowTrade( tradeMagicNum, tradeTicketNum, OrderOpenTime(), OrderOpenPrice(), OrderCloseTime(), OrderClosePrice(), colorArrowSL, thiccArrow, doAlert);
                   
-               if(doDrawRectangleSlTp == true)
+               if(doDrawRectangleSlTp == true){
                   drawRectTrade( tradeMagicNum, tradeTicketNum, (VIZ_TRADE_SL +"a"), OrderOpenTime(), OrderOpenPrice(), OrderCloseTime(), OrderStopLoss(), colorRectSL, thiccRect, doFill, withBackCol, false);
+                  if(OrderTakeProfit() > 0)
+                     drawRectTrade( tradeMagicNum, tradeTicketNum, (VIZ_TRADE_TP +"b"), OrderOpenTime(), OrderOpenPrice(), OrderCloseTime(), OrderTakeProfit(), colorRectTP, thiccRect, false, false, false);
+               }
             }
             else if(OrderProfit() >= 0.0){   // Profit
                if(doDrawArrows == true)
