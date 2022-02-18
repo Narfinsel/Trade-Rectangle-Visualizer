@@ -24,7 +24,7 @@ Trade-Rectangle Visualizer is a utility class that helps algorithmic traders get
 1. [Intro](#1-intro)
 2. [Table of Contents](#2-table-of-contents)
 3. [Project Description](#3-project-description)
-   - [Definition & Terminology](#definition--terminology)
+   - [Definitions](#definitions)
 4. [How to Install and Run the Project](#4-how-to-install-and-run-the-project)
 5. [Configure the Properties and Functionality](#5-configure-the-properties-and-functionality)
 6. [How to Use the Project](#6-how-to-use-the-project)
