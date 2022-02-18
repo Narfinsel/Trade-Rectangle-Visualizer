@@ -14,16 +14,16 @@ Trade-Rectangle Visualizer is a utility class that helps algorithmic traders get
 </p>
 
 
-## 1. Intro
-**Motivation** Many online traders preffer to automate their trading strategies, but they don't have good, reliable scripts, to help confidently detect candle-stick pattern like stars, engulfings and consolidation. I struggled with this alot and decided to make things easier for myself and other traders, by programming in and sharing this MQL5 Metatrader script.
+## 1. Introduction
+**Why did I start this project?** As an online Fx & stocks trader, I often automatize my strategies - off-loading the hard work to trading bots. But when I want to monitor my bots and get a quick glance at how well they are performing, things become more complicated. There is no easy way to view the profitability of EA bots, other than spending a few minutes inside the EA reports, graphs, and results.
 
-**Problem** One of the biggest problems in trading with EAs (Expert Advisors/ trading bots) is finding reliable signals that can actually be used in code. There are many scripts in the marketplace that do visually idendify patterns on the chart, by drawing visual aids. But very few (if any) convert these candle-patterns into usable, code-ready objects, that can easily be incorporated as part of the internal making of an algorithm. Too many scripts only show patterns on the graphs, but that is useless for the trading bots, since they need objects from which to read data, to base decisions on.
+**Why is this a problem?** When it comes to automated trading, the main thing you want to know is how profitable your strategy / Expert Advisor (EA) are. How many recent wins and loses did it record. But this information is burried inside tester sub-windows (reports, results, graphs). If you have dozens of bots running simultanously, going into each of them is time-consuming, frustrating, and non-user friendly.
 
-**Solution** My script identifies reversal patterns, it converts them into objects stored in an array. There is an option to customize how rigid the pattern-detection should be, to mark out only the strongest reversal signals. Visual square markings can be customized as well (color, style and thickness), for bullish and bearish patterns. I even optimized memory usage, by making sure to delete older patterns, or broken ones. Reversal patterns have many attributes and my code can read, change, and distinguish reversals based on their properties - to decide which trading actions to undertake.
+**How does my script make your life easier?** Instead of digging through countless tabs and sub-windows on dozens of charts, my script draws coloured rectangles and lines displaying profitable trades and loses directly on the graph. Just switch between your instrument charts to see the recents profits, loses, trading statistics.
 
 
 ## 2. Table of Contents
-1. [Intro](#1-intro)
+1. [Introduction](#1-introduction)
 2. [Table of Contents](#2-table-of-contents)
 3. [Project Description](#3-project-description)
    - [Definitions](#definitions)
@@ -54,7 +54,13 @@ Trade-Rectangle Visualizer is a utility class that helps algorithmic traders get
 
 
 ## 7. Credits
-
+I can't credit anyone directly, but this section seems appropriate because I owe special thanks to so many course & content creators, chanels, youtubers.
+1. MQL4 Programming. Visit https://www.youtube.com/channel/UCIuhfiM34b2P8qv_HX_uwug/featured
+2. ForexBoat Team. Check out https://www.udemy.com/course/learn-mql4/
+These guys create amazing content and I have learned so much from them!
 
 
 ## 8. License
+Feel free to use this project for yourself. Or to edit it, use bits of it. Do not commercialize it! My *Trade-Rectangle-Visualizer* project is licensed under the GNU AGPLv3 license. Check out the licence link to better understand what you can and cannot do with this code.
+
+
