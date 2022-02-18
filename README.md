@@ -55,8 +55,8 @@ Trade-Rectangle Visualizer is a utility class that helps algorithmic traders get
 
 ## 7. Credits
 I can't credit anyone directly, but this section seems appropriate because I owe special thanks to so many course & content creators, chanels, youtubers.
-1. MQL4 Programming. Visit https://www.youtube.com/channel/UCIuhfiM34b2P8qv_HX_uwug/featured
-2. ForexBoat Team. Check out https://www.udemy.com/course/learn-mql4/
+1. MQL4 Programming. Visit this [link](https://www.youtube.com/channel/UCIuhfiM34b2P8qv_HX_uwug/featured).
+2. ForexBoat Team. Check out Kiril's course on [udemy](https://www.udemy.com/course/learn-mql4/).
 These guys create amazing content and I have learned so much from them!
 
 
