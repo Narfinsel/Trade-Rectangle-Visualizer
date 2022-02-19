@@ -182,9 +182,9 @@ void OnDeinit (const int reason){
 			```
 		</td>
 		<td>
-			```MQL5
+			<code>
 			rectVisualizer.setWhatToDraw (true, false);
-			```
+			</code>
 		</td>
 		<td>
 		   	```MQL5
