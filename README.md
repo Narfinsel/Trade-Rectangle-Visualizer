@@ -194,12 +194,12 @@ void OnDeinit (const int reason){
 	<tbody>
 	  <tr>
 		<td> <strong>Full vs Half <br>Rectangle</strong> </td>
-		<td> <img src="/img/settings/color-change-fully-colored.png"><br> <i>Blue profits, red loses.</i><br>
+		<td> <img src="/img/settings/color-change-fully-colored.png"><br> <i>Fully colored - both profit & loss directions, regardless of trade outcome.</i><br>
 			<code>
 			rectVisualizer.vizualizeFullyColoredTradeRect (magicNumber, currentOrderTicket);
 			</code>
 		</td>
-		<td> <img src="/img/settings/color-change-half-colored.png"><br> <i>Half rectangle, with only outcome c.</i><br>
+		<td> <img src="/img/settings/color-change-half-colored.png"><br> <i>Half colored - only the direction of the trade outcome.</i><br>
 			<code>
 			rectVisualizer.vizualizeHalfHollowTradeRect (magicNumber, currentOrderTicket);
 			</code>
