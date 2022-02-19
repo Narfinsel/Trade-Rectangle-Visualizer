@@ -42,6 +42,94 @@ Trade-Rectangle Visualizer is a utility class that helps algorithmic traders get
 
 
 ## 4. How to Install and Run the Project
+**Step 1.** Include the class file in your trading robot. The file-path (inside the "#include" preprocessor directive) might change depending on your folder structure or where you place the file:
+
+```MQL5
+  #include <__SimonG\Helpers\TradeRectVisualizer.mqh>
+```
+**Step 2.** Declare a global or local variable of type *TradeRectVisualizer*: 
+
+```MQL5
+  TradeRectVisualizer * rectVisualizer;
+```
+
+**Step 3.** Initialize the TradeRectVisualizer object. The best place for this is inside the OnInit() function.
+
+```MQL5
+int OnInit(){
+   rectVisualizer = new TradeRectVisualizer();
+   rectVisualizer.setWhatToDraw (true, true);
+   //rectVisualizer.setTradeArrowProperties (clrDeepPink, clrDarkTurquoise, 3);
+   //rectVisualizer.setTradeRectProperties (clrPink, clrPaleTurquoise, true, true, 2);
+   //rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 3);
+   //rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 2);
+   rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);
+   rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2);
+}
+```
+  
+**Step 4.** Set-up a code sequence that uses the TradeRectVisualizer object immediatly after a trade closes, either in loss or profit:
+
+```MQL5
+void check_condition_open_trade (){
+   // Check if there is an open trade, or if it was closed as a result of hitting Stop Loss
+   static bool hasDrawnArrRect = false;
+   if(OrderSelect(currentOrderTicket, SELECT_BY_TICKET) == true)
+      if(OrderCloseTime() > 0){
+         isThereAnOpenTrade = false;
+         if(doGraphTradesArrRect == true && hasDrawnArrRect == false){
+            rectVisualizer.vizualizeHalfHollowTradeRect (magicNumber, currentOrderTicket);
+            //rectVisualizer.vizualizeFullyColoredTradeRect (magicNumber, currentOrderTicket);
+            hasDrawnArrRect = true;
+         }
+      }
+      else isThereAnOpenTrade = true;
+   
+   // Only check to open trade if no trade open yet
+   if(isThereAnOpenTrade == false){
+   
+      conditionForBuying  = validateOpenBuy ();
+      conditionForSelling = validateOpenSell ();
+      double volume = 100;
+      double stopLossPoints = 0.0020;
+      double takeProffitMultiply = 2.0;
+      
+      // OPEN BUY
+      if( conditionForBuying == true ){
+         double orderStopLoss   = Ask - stopLossPoints;
+         double orderTakeProfit = Ask + (stopLossPoints * takeProffitMultiply);
+         currentOrderTicket = OrderSend(Symbol(), OP_BUY, volume, Bid, 10, orderStopLoss, orderTakeProfit, "by me", magicNumber, clrTurquoise);
+         if(OrderSelect(currentOrderTicket, SELECT_BY_TICKET) == true){
+            isThereAnOpenTrade = true;
+            hasDrawnArrRect = false;
+         }
+      }
+      // OPEN SELL
+      else if( conditionForSelling == true ){
+         double orderStopLoss   = Bid + stopLossPoints;
+         double orderTakeProfit = Bid - (stopLossPoints * takeProffitMultiply);
+         currentOrderTicket = OrderSend(Symbol(), OP_SELL, volume, Bid, 10, orderStopLoss, orderTakeProfit, "by me", magicNumber, clrCrimson);
+         if(OrderSelect(currentOrderTicket, SELECT_BY_TICKET) == true){
+            isThereAnOpenTrade = true;
+            hasDrawnArrRect = false;
+         }
+      }
+   }
+}
+```
+Everything is set up. Use both objects and the most recently detected reversal pattern (bullish / bearish) in your code logic for the algorithm, to determine trading outcome.
+
+
+**Step 5.** Memory clean-up, object deletion. This step is necesary for high-performing scripts, otherwise the left-over objects will continue to live in MT4/MT5 memory a long time, or until you close the software.
+
+```MQL5
+void OnDeinit (const int reason){
+   delete rectVisualizer;
+}
+
+```
+
+
 
 
 
