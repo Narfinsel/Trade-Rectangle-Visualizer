@@ -1,5 +1,5 @@
 # Trade-Rectangle-Visualizer
-Trade-Rectangle Visualizer is a utility class that helps algorithmic traders get a general idea about how well their EA is doing, just by having a quick glance at your chart, without the need to dig through trading logs and reports.
+Trade-Rectangle Visualizer is a utility class that makes automatic trading easy and seamless for online traders, by offering a general idea about how well their EA is doing, just by having a quick glance at the charts, without the need to read text-formatted trading logs, results, and reports.
 
 <p align="left" dir="auto">
   <a target="_blank" rel="noopener noreferrer" href="/img/trades-visualizations_gy.gif">
@@ -135,6 +135,10 @@ void OnDeinit (const int reason){
 
 
 ## 6. How to Use the Project
+The _How to Install_ section offers a great example on how to use this utility class.
+| DEFAULT SCENARIO w/o SCRIPT                                                              | OPTIMIZED VISUALS with MY SCRIPT                                                                    |
+| :---                                                                      | :---                                                                          	|
+| <img src="/img/patterns/default-trading-line.PNG"><br> <i>Can barely see the profits/loses directly on the graph. </i>   	| <img src="/img/patterns/optimized-visuals-trading-line-rect.PNG"><br> <i>Trading rectangle visualized, easier to see profits and loses.</i>  |
 
 
 
