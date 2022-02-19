@@ -183,6 +183,31 @@ void OnDeinit (const int reason){
 </table>
 
 
+<table>
+	<thead>
+	  <tr>
+		<th>Customization</th>
+		<th>OPTION 1</th>
+		<th>OPTION 2</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td> <strong>Full vs Half <br>Rectangle</strong> </td>
+		<td> <img src="/img/settings/color-change-fully-colored.png"><br> <i>Blue profits, red loses.</i><br>
+			<code>
+			rectVisualizer.vizualizeFullyColoredTradeRect (magicNumber, currentOrderTicket);
+			</code>
+		</td>
+		<td> <img src="/img/settings/color-change-half-colored.png"><br> <i>Half rectangle, with only outcome c.</i><br>
+			<code>
+			rectVisualizer.vizualizeHalfHollowTradeRect (magicNumber, currentOrderTicket);
+			</code>
+		</td>
+	  </tr>
+	</tbody>
+</table>
+
 
 
 ## 6. How to Use the Project
