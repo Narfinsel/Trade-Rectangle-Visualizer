@@ -134,7 +134,13 @@ void OnDeinit (const int reason){
 | Reversal  | OPTION 1                                                               | OPTION 2                                                                    | OPTION 3 																	   |
 | :---      | :---                                                                      | :---                                                                          	| :---																				   |															
 | Color Changes   			| <img src="/img/settings/color-change-blue-red-250.PNG"><br> <i>Blue profits, red loses.</i>   	| <img src="/img/settings/color-change-green-orange-250.PNG"><br> <i>Green profits, orange loses.</i>  | <img src="/img/settings/color-change-teal-pink-250.PNG"><br> <i>Turqoise profits, pink loses.</i> |
-| 				   			| ```MQL5 rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br> rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2);```	| ```MQL5rectVisualizer.setTradeArrowProperties(clrDarkOrange, clrGreen, 3);<br>   rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 2);   ```  | ```MQL5rectVisualizer.setTradeArrowProperties(clrDeepPink, clrDarkTurquoise, 3);<br> rectVisualizer.setTradeRectProperties (clrPink, clrPaleTurquoise, true, true, 2);``` |
+| 				   			| ```MQL5
+rectVisualizer.setTradeArrowProperties(clrRed, clrRoyalBlue, 3);<br> rectVisualizer.setTradeRectProperties(clrTomato, clrDeepSkyBlue, true, true, 2);
+```	| ```MQL5
+rectVisualizer.setTradeArrowProperties(clrDarkOrange, clrGreen, 3);<br> rectVisualizer.setTradeRectProperties(clrPeachPuff, clrLightGreen, true, true, 2);   
+``` | ```MQL5
+rectVisualizer.setTradeArrowProperties(clrDeepPink, clrDarkTurquoise, 3);<br> rectVisualizer.setTradeRectProperties(clrPink, clrPaleTurquoise, true, true, 2);
+``` |
 | Draw Options Rect / Line	| <img src="/img/settings/draw-rect-and-line.PNG"><br> <i>Draw Rectangle and line.</i>   	| <img src="/img/settings/draw-only-lines.PNG"><br> <i>Draw only lines.</i>  | <img src="/img/settings/draw-only-rect.PNG"><br> <i>Draw only rectangle.</i> |
 | 							| ```MQL5 rectVisualizer.setWhatToDraw (true, true);``` | ```MQL5 rectVisualizer.setWhatToDraw (true, false);``` | ```MQL5 rectVisualizer.setWhatToDraw (false, true);``` |
 
