@@ -20,7 +20,9 @@ Trade-Rectangle Visualizer is a utility class that makes automatic trading easy 
 **Why is this a problem?** When it comes to automated trading, the main thing you want to know is how profitable your strategy / Expert Advisor (EA) are. How many recent wins and loses did it record. But this information is burried inside tester sub-windows (reports, results, graphs). If you have dozens of bots running simultanously, going into each of them is time-consuming, frustrating, and non-user friendly.
 
 **How does my script make your life easier?** Instead of digging through countless tabs and sub-windows on dozens of charts, my script draws coloured rectangles and lines displaying profitable trades and loses directly on the graph. Just switch between your instrument charts to see the recents profits, loses, trading statistics.
-<div markdown="1">Have **fun!**</div>
+<div markdown="1">
+Have **fun!**
+</div>
 
 ## 2. Table of Contents
 1. [Introduction](#1-introduction)
