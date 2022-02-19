@@ -38,8 +38,6 @@ Trade-Rectangle Visualizer is a utility class that makes automatic trading easy 
 ## 3. Project Description
 
 ### Definitions
-.. code-block::
-   $a = 'b';
 
 
 ## 4. How to Install and Run the Project
@@ -161,7 +159,12 @@ void OnDeinit (const int reason){
 rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 3);<br>
 rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 2);
 ```
-		</td>
+```MQL5
+void OnDeinit (const int reason){
+   delete rectVisualizer;
+}
+```
+		</td>	
 		<td>
 			```MQL5
 		   	rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br>
