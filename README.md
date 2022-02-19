@@ -204,6 +204,8 @@ void OnDeinit (const int reason){
 			rectVisualizer.vizualizeHalfHollowTradeRect (magicNumber, currentOrderTicket);
 			</code>
 		</td>
+	  </tr>
+	  <tr>
 		<td> <strong>Line & Rect <br>Thicknesses</strong> </td>
 		<td> <img src="/img/settings/color-thin-lines.png"><br> <i>Thin, slim lines & out-lines.</i><br>
 			<code>
