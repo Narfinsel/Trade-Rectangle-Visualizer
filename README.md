@@ -141,7 +141,7 @@ void OnDeinit (const int reason){
 	</thead>
 	<tbody>
 	  <tr>
-		<td> **Color Changes** </td>
+		<td> <em>Color <br>Changes</em> </td>
 		<td> <img src="/img/settings/color-change-blue-red-250.png"><br> <i>Blue profits, red loses.</i><br>
 			<code>
 			rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br>
@@ -162,7 +162,7 @@ void OnDeinit (const int reason){
 		</td>
 	  </tr>
 	  <tr>
-		<td> **Draw Options Rect / Line** </td>
+		<td> <em>Draw Options<br> Rect/Line<em> </td>
 		<td> <img src="/img/settings/draw-rect-and-line.png"><br> <i>Draw Rectangle and line.</i><br>
 			<code>
 			rectVisualizer.setWhatToDraw (true, true);
