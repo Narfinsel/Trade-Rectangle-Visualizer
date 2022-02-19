@@ -207,13 +207,13 @@ void OnDeinit (const int reason){
 	  </tr>
 	  <tr>
 		<td> <strong>Line & Rect <br>Thicknesses</strong> </td>
-		<td> <img src="/img/settings/color-thin-lines.png"><br> <i>Thin, slim lines & out-lines.</i><br>
+		<td> <img src="/img/settings/draw-with-thin-lines.png"><br> <i>Thin, slim lines & out-lines.</i><br>
 			<code>
 			rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 1);
 			rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 1);
 			</code>
 		</td>
-		<td> <img src="/img/settings/color-change-fat-lines.png"><br> <i>Thick, fat lines & out-lines.</i><br>
+		<td> <img src="/img/settings/draw-with-fat-lines.png"><br> <i>Thick, fat lines & out-lines.</i><br>
 			<code>
 			rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 5);
 			rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 5);
