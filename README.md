@@ -38,7 +38,8 @@ Trade-Rectangle Visualizer is a utility class that makes automatic trading easy 
 ## 3. Project Description
 
 ### Definitions
-
+.. code-block::
+   $a = 'b';
 
 
 ## 4. How to Install and Run the Project
