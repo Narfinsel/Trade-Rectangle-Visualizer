@@ -131,12 +131,70 @@ void OnDeinit (const int reason){
 
 
 ## 5. Configure the Properties and Functionality
-| Reversal  | OPTION 1                                                               | OPTION 2                                                                    | OPTION 3 																	   |
-| :---      | :---                                                                      | :---                                                                          	| :---																				   |															
-| Color Changes   			| <img src="/img/settings/color-change-blue-red-250.PNG"><br> <i>Blue profits, red loses.</i>   	| <img src="/img/settings/color-change-green-orange-250.PNG"><br> <i>Green profits, orange loses.</i>  | <img src="/img/settings/color-change-teal-pink-250.PNG"><br> <i>Turqoise profits, pink loses.</i> |
-| 				   			| ```MQL5	rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br> rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2);	```	| ```MQL5 rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 3);<br>   rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 2);   ```  | ```MQL5 rectVisualizer.setTradeArrowProperties (clrDeepPink, clrDarkTurquoise, 3);<br> rectVisualizer.setTradeRectProperties (clrPink, clrPaleTurquoise, true, true, 2);``` |
-| Draw Options Rect / Line	| <img src="/img/settings/draw-rect-and-line.PNG"><br> <i>Draw Rectangle and line.</i>   	| <img src="/img/settings/draw-only-lines.PNG"><br> <i>Draw only lines.</i>  | <img src="/img/settings/draw-only-rect.PNG"><br> <i>Draw only rectangle.</i> |
-| 							| ```MQL5 rectVisualizer.setWhatToDraw (true, true);``` | ```MQL5 rectVisualizer.setWhatToDraw (true, false);``` | ```MQL5 rectVisualizer.setWhatToDraw (false, true);``` |
+<table>
+	<thead>
+	  <tr>
+		<th>Customization</th>
+		<th>OPTION 1</th>
+		<th>OPTION 2</th>
+		<th>OPTION 3</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td> **Color Changes** </td>
+		<td> <img src="/img/settings/color-change-blue-red-250.PNG"><br> <i>Blue profits, red loses.</i>  </td>
+		<td> <img src="/img/settings/color-change-green-orange-250.PNG"><br> <i>Green profits, orange loses.</i> </td>
+		<td> <img src="/img/settings/color-change-teal-pink-250.PNG"><br> <i>Turqoise profits, pink loses.</i> </td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td>
+			```MQL5
+			rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br>
+			rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2);
+			```
+		</td>
+		<td>
+			```MQL5
+			rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 3);<br>
+			rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 2);
+			```
+		</td>
+		<td>
+			```MQL5
+		   rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br>
+		   rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2);
+			```
+		</td>
+	  </tr>
+	  <tr>
+		<td> **Draw Options Rect / Line** </td>
+		<td> <img src="/img/settings/draw-rect-and-line.PNG"><br> <i>Draw Rectangle and line.</i> </td>
+		<td> <img src="/img/settings/draw-only-lines.PNG"><br> <i>Draw only lines.</i> </td>
+		<td> <img src="/img/settings/draw-only-rect.PNG"><br> <i>Draw only rectangle.</i> </td>
+	  </tr>
+	  <tr>
+		<td></td>
+		<td>
+			```MQL5
+			rectVisualizer.setWhatToDraw (true, true);
+			```
+		</td>
+		<td>
+			```MQL5
+			rectVisualizer.setWhatToDraw (true, false);
+			```
+		</td>
+		<td>
+			```MQL5
+		   rectVisualizer.setWhatToDraw (false, true);
+			```
+		</td>
+	  </tr>	  
+	</tbody>
+</table>
+
 
 
 
