@@ -142,19 +142,19 @@ void OnDeinit (const int reason){
 	<tbody>
 	  <tr>
 		<td> **Color Changes** </td>
-		<td> <img src="/img/settings/color-change-blue-red-250.PNG"><br> _Blue profits, red loses._<br>
+		<td> <img src="/img/settings/color-change-blue-red-250.PNG"><br> <i>Blue profits, red loses.</i><br>
 			<code>
-			  rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br>
-			  rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2);
+			rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br>
+			rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2);
 			</code>
 		</td>
-		<td> <img src="/img/settings/color-change-green-orange-250.PNG"><br> _Green profits, orange loses._<br>
+		<td> <img src="/img/settings/color-change-green-orange-250.PNG"><br> <i>Green profits, orange loses.</i><br>
 			<code>
-			  rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 3);<br>
-			  rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 2);
+			rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 3);<br>
+			rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 2);
 			</code>
 		</td>
-		<td> <img src="/img/settings/color-change-teal-pink-250.PNG"><br> _Turqoise profits, pink loses._<br>
+		<td> <img src="/img/settings/color-change-teal-pink-250.PNG"><br> <i>Turqoise profits, pink loses.</i><br>
 			<code>
 		   	rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br>
 		   	rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2);
@@ -163,19 +163,19 @@ void OnDeinit (const int reason){
 	  </tr>
 	  <tr>
 		<td> **Draw Options Rect / Line** </td>
-		<td> <img src="/img/settings/draw-rect-and-line.PNG"><br> _Draw Rectangle and line._<br>
+		<td> <img src="/img/settings/draw-rect-and-line.PNG"><br> <i>Draw Rectangle and line.</i><br>
 			<code>
-			  rectVisualizer.setWhatToDraw (true, true);
+			rectVisualizer.setWhatToDraw (true, true);
 			</code>
 		</td>
-		<td> <img src="/img/settings/draw-only-lines.PNG"><br> _Draw only lines._<br>
+		<td> <img src="/img/settings/draw-only-lines.PNG"><br> <i>Draw only lines.</i><br>
 			<code>
-			  rectVisualizer.setWhatToDraw (true, false);
+			rectVisualizer.setWhatToDraw (true, false);
 			</code>		
 		</td>
-		<td> <img src="/img/settings/draw-only-rect.PNG"><br> _Draw only rectangle._<br>
-		  <code>
-		    rectVisualizer.setWhatToDraw (false, true);
+		<td> <img src="/img/settings/draw-only-rect.PNG"><br> <i>Draw only rectangle.</i><br>
+		   	<code>
+		   	rectVisualizer.setWhatToDraw (false, true);
 		 	</code>		
 		</td>
 	  </tr>	  
