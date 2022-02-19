@@ -71,6 +71,8 @@ int OnInit(){
 **Step 4.** Set-up a code sequence that uses the TradeRectVisualizer object immediatly after a trade closes, either in loss or profit:
 
 ```MQL5
+static int currentOrderTicket = -1;
+
 void check_condition_open_trade (){
    // Check if there is an open trade, or if it was closed as a result of hitting Stop Loss
    static bool hasDrawnArrRect = false;
@@ -93,6 +95,7 @@ void check_condition_open_trade (){
       double volume = 100;
       double stopLossPoints = 0.0020;
       double takeProffitMultiply = 2.0;
+      int magicNumber = 18329;
       
       // OPEN BUY
       if( conditionForBuying == true ){
