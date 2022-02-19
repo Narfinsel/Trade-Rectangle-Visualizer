@@ -195,7 +195,7 @@ void OnDeinit (const int reason){
 The _How to Install_ section offers a great example on how to use this utility class.
 | DEFAULT SCENARIO w/o SCRIPT                                                              | OPTIMIZED VISUALS with MY SCRIPT                                                                    |
 | :---                                                                      | :---                                                                          	|
-| <img src="/img/usage/default-trading-line.png"><br> <i>Can barely see the profits/loses directly on the graph. </i>   	| <img src="/img/usage/optimized-visuals-trading-line-rect.png"><br> <i>Trading rectangle visualized, easier to see profits and loses.</i>  |
+| <img src="/img/usage/default-trading-line.PNG"><br> <i>Can barely see the profits/loses directly on the graph. </i>   	| <img src="/img/usage/optimized-visuals-trading-line-rect.png"><br> <i>Trading rectangle visualized, easier to see profits and loses.</i>  |
 
 
 
