@@ -144,10 +144,12 @@ void OnDeinit (const int reason){
 		<td> <strong>Color Changes</strong> </td>
 		<td> <img src="/img/settings/color-change-blue-red-250.png"><br> 
 		     <i>Blue profits, red loses.</i><br>
-		     <code>
-			rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br>
+		     <div markdown="1">
+			**rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);** <br>
+			```MQL5    
 			rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2);
-		     </code>
+			```
+		     </div>
 		</td>
 		<td> <img src="/img/settings/color-change-green-orange-250.png"><br>
 		     <i>Green profits, orange loses.</i><br>
