@@ -195,7 +195,7 @@ void OnDeinit (const int reason){
 The _How to Install_ section offers a great example on how to use this utility class.
 | DEFAULT SCENARIO w/o SCRIPT                                                              | OPTIMIZED VISUALS with MY SCRIPT                                                                    |
 | :---                                                                      | :---                                                                          	|
-| <img src="/img/default-trading-line.PNG"><br> <i>Can barely see the profits/loses directly on the graph. </i>   	| <img src="/img/optimized-visuals-trading-line-rect.PNG"><br> <i>Trading rectangle visualized, easier to see profits and loses.</i>  |
+| <img src="/img/usage/default-trading-line.png"><br> <i>Can barely see the profits/loses directly on the graph. </i>   	| <img src="/img/usage/optimized-visuals-trading-line-rect.png"><br> <i>Trading rectangle visualized, easier to see profits and loses.</i>  |
 
 
 
@@ -203,7 +203,6 @@ The _How to Install_ section offers a great example on how to use this utility c
 I can't credit anyone directly, but this section seems appropriate because I owe special thanks to so many course & content creators, chanels, youtubers.
 1. MQL4 Programming. Visit this [link](https://www.youtube.com/channel/UCIuhfiM34b2P8qv_HX_uwug/featured).
 2. ForexBoat Team. Check out Kiril's course on [udemy](https://www.udemy.com/course/learn-mql4/).
-
 These guys create amazing content and I have learned so much from them!
 
 
