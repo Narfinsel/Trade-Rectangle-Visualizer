@@ -130,9 +130,9 @@ void OnDeinit (const int reason){
 
 
 ## 5. Configure the Properties and Functionality
+| Reversal  | OPTION 1                                                               | OPTION 2                                                                    | OPTION 3 																	   |
+| :---      | :---                                                                      | :---                                                                          	| :---																				   |															
 | Color Changes   			| <img src="/img/settings/color-change-blue-red-250.PNG"><br> <i>Blue profits, red loses.</i><br>  ```MQL5 rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br> rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2); ```| <img src="/img/settings/color-change-green-orange-250.PNG"><br> <i>Green profits, orange loses.</i><br> ```MQL5 rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 3);<br>   rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 2);   ``` | <img src="/img/settings/color-change-teal-pink-250.PNG"><br> <i>Turqoise profits, pink loses.</i><br> ``` MQL5 rectVisualizer.setTradeArrowProperties (clrDeepPink, clrDarkTurquoise, 3);<br> rectVisualizer.setTradeRectProperties (clrPink, clrPaleTurquoise, true, true, 2);``` |
-
-
 
 
 
