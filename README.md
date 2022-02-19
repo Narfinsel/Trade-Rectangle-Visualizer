@@ -141,55 +141,42 @@ void OnDeinit (const int reason){
 	</thead>
 	<tbody>
 	  <tr>
-		<td> <strong>Color Changes</strong> </td>
-		<td> <img src="/img/settings/color-change-blue-red-250.png"><br> <i>Blue profits, red loses.</i><br>
-			<div markdow="1">
-	
-			```MQL5
-			rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);
+		<td> **Color Changes** </td>
+		<td> <img src="/img/settings/color-change-blue-red-250.PNG"><br> <i>Blue profits, red loses.</i><br>
+			<code>
+			rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br>
 			rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2);
-			```
-	
-			</div>
+			</code>
 		</td>
-		<td> <img src="/img/settings/color-change-green-orange-250.png"><br>
-		     <i>Green profits, orange loses.</i><br>
-
-```MQL5
-rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 3);<br>
-rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 2);
-```
-			
+		<td> <img src="/img/settings/color-change-green-orange-250.PNG"><br> <i>Green profits, orange loses.</i><br>
+			<code>
+			rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 3);<br>
+			rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 2);
+			</code>
 		</td>
-		<td> <img src="/img/settings/color-change-teal-pink-250.png"><br>
-		     <i>Turqoise profits, pink loses.</i><br>
-
-```MQL5
-rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br>
-rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2);
-```
-			
+		<td> <img src="/img/settings/color-change-teal-pink-250.PNG"><br> <i>Turqoise profits, pink loses.</i><br>
+			<code>
+		   	rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br>
+		   	rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2);
+			</code>
 		</td>
 	  </tr>
 	  <tr>
-		<td> <strong>Draw Rect and Line</strong> </td>
-		<td> <img src="/img/settings/draw-rect-and-line.png"><br>
-		     <i>Draw Rectangle and line.</i><br>
-		     <code>
+		<td> **Draw Options Rect / Line** </td>
+		<td> <img src="/img/settings/draw-rect-and-line.PNG"><br> <i>Draw Rectangle and line.</i><br>
+			<code>
 			rectVisualizer.setWhatToDraw (true, true);
-		     </code>
+			</code>
 		</td>
-		<td> <img src="/img/settings/draw-only-lines.png"><br>
-		     <i>Draw only lines.</i><br>
-		     <code>
+		<td> <img src="/img/settings/draw-only-lines.PNG"><br> <i>Draw only lines.</i><br>
+			<code>
 			rectVisualizer.setWhatToDraw (true, false);
-		     </code>		
+			</code>		
 		</td>
-		<td> <img src="/img/settings/draw-only-rect.png"><br>
-		     <i>Draw only rectangle.</i><br>
-		     <code>
+		<td> <img src="/img/settings/draw-only-rect.PNG"><br> <i>Draw only rectangle.</i><br>
+		   	<code>
 		   	rectVisualizer.setWhatToDraw (false, true);
-		     </code>		
+		 	</code>		
 		</td>
 	  </tr>	  
 	</tbody>
