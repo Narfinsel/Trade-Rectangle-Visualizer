@@ -149,27 +149,22 @@ void OnDeinit (const int reason){
 	  <tr>
 		<td></td>
 		<td>
-			```MQL5
+			<code>
 			rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br>
 			rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2);
-			```
+			</code>
 		</td>
 		<td>
-```MQL5
-rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 3);<br>
-rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 2);
-```
-```MQL5
-void OnDeinit (const int reason){
-   delete rectVisualizer;
-}
-```
+			<code>
+			rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 3);<br>
+			rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 2);
+			</code>
 		</td>	
 		<td>
-			```MQL5
+			<code>
 		   	rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br>
 		   	rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2);
-			```
+			</code>
 		</td>
 	  </tr>
 	  <tr>
@@ -181,9 +176,9 @@ void OnDeinit (const int reason){
 	  <tr>
 		<td></td>
 		<td>
-			```MQL5
+			<code>
 			rectVisualizer.setWhatToDraw (true, true);
-			```
+			</code>
 		</td>
 		<td>
 			<code>
@@ -191,9 +186,9 @@ void OnDeinit (const int reason){
 			</code>
 		</td>
 		<td>
-		   	```MQL5
+		   	<code>
 		   	rectVisualizer.setWhatToDraw (false, true);
-		 	```
+		 	</code>
 		</td>
 	  </tr>	  
 	</tbody>
