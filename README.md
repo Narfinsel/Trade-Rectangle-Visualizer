@@ -157,10 +157,10 @@ void OnDeinit (const int reason){
 			```
 		</td>
 		<td>
-			```MQL5
-			rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 3);<br>
-			rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 2);
-			```
+```MQL5
+rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 3);<br>
+rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 2);
+```
 		</td>
 		<td>
 			```MQL5
