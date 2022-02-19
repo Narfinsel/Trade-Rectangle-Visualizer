@@ -130,10 +130,57 @@ void OnDeinit (const int reason){
 
 
 ## 5. Configure the Properties and Functionality
-| Reversal  | OPTION 1                                                               | OPTION 2                                                                    | OPTION 3 																	   |
-| :---      | :---                                                                      | :---                                                                          	| :---																				   |															
-| Color Changes   			| <img src="/img/settings/color-change-blue-red-250.PNG"><br> <i>Blue profits, red loses.</i><br>  ```MQL5 rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br> rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2); ```| <img src="/img/settings/color-change-green-orange-250.PNG"><br> <i>Green profits, orange loses.</i><br> ```MQL5 rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 3);<br>   rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 2);   ``` | <img src="/img/settings/color-change-teal-pink-250.PNG"><br> <i>Turqoise profits, pink loses.</i><br> ``` MQL5 rectVisualizer.setTradeArrowProperties (clrDeepPink, clrDarkTurquoise, 3);<br> rectVisualizer.setTradeRectProperties (clrPink, clrPaleTurquoise, true, true, 2);``` |
-
+<table>
+	<thead>
+	  <tr>
+		<th>Customization</th>
+		<th>OPTION 1</th>
+		<th>OPTION 2</th>
+		<th>OPTION 3</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td> **Color Changes** </td>
+		<td> <img src="/img/settings/color-change-blue-red-250.PNG"><br> _Blue profits, red loses._<br>
+			<code>
+			  rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br>
+			  rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2);
+			</code>
+		</td>
+		<td> <img src="/img/settings/color-change-green-orange-250.PNG"><br> _Green profits, orange loses._<br>
+			<code>
+			  rectVisualizer.setTradeArrowProperties (clrDarkOrange, clrGreen, 3);<br>
+			  rectVisualizer.setTradeRectProperties (clrPeachPuff, clrLightGreen, true, true, 2);
+			</code>
+		</td>
+		<td> <img src="/img/settings/color-change-teal-pink-250.PNG"><br> _Turqoise profits, pink loses._<br>
+			<code>
+		   	rectVisualizer.setTradeArrowProperties (clrRed, clrRoyalBlue, 3);<br>
+		   	rectVisualizer.setTradeRectProperties (clrTomato, clrDeepSkyBlue, true, true, 2);
+			</code>
+		</td>
+	  </tr>
+	  <tr>
+		<td> **Draw Options Rect / Line** </td>
+		<td> <img src="/img/settings/draw-rect-and-line.PNG"><br> _Draw Rectangle and line._<br>
+			<code>
+			  rectVisualizer.setWhatToDraw (true, true);
+			</code>
+		</td>
+		<td> <img src="/img/settings/draw-only-lines.PNG"><br> _Draw only lines._<br>
+			<code>
+			  rectVisualizer.setWhatToDraw (true, false);
+			</code>		
+		</td>
+		<td> <img src="/img/settings/draw-only-rect.PNG"><br> _Draw only rectangle._<br>
+		  <code>
+		    rectVisualizer.setWhatToDraw (false, true);
+		 	</code>		
+		</td>
+	  </tr>	  
+	</tbody>
+</table>
 
 
 
