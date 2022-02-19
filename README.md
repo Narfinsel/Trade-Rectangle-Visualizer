@@ -48,13 +48,12 @@ Trade-Rectangle Visualizer is a utility class that helps algorithmic traders get
   #include <__SimonG\Helpers\TradeRectVisualizer.mqh>
 ```
 **Step 2.** Declare a global or local variable of type *TradeRectVisualizer*: 
-
 ```MQL5
   TradeRectVisualizer * rectVisualizer;
 ```
 
-**Step 3.** Initialize the TradeRectVisualizer object. The best place for this is inside the OnInit() function.
 
+**Step 3.** Initialize the TradeRectVisualizer object. The best place for this is inside the OnInit() function.
 ```MQL5
 int OnInit(){
    rectVisualizer = new TradeRectVisualizer();
@@ -68,8 +67,8 @@ int OnInit(){
 }
 ```
   
+  
 **Step 4.** Set-up a code sequence that uses the TradeRectVisualizer object immediatly after a trade closes, either in loss or profit:
-
 ```MQL5
 static int currentOrderTicket = -1;
 
@@ -120,19 +119,14 @@ void check_condition_open_trade (){
    }
 }
 ```
-Everything is set up. Use both objects and the most recently detected reversal pattern (bullish / bearish) in your code logic for the algorithm, to determine trading outcome.
 
 
 **Step 5.** Memory clean-up, object deletion. This step is necesary for high-performing scripts, otherwise the left-over objects will continue to live in MT4/MT5 memory a long time, or until you close the software.
-
 ```MQL5
 void OnDeinit (const int reason){
    delete rectVisualizer;
 }
-
 ```
-
-
 
 
 
