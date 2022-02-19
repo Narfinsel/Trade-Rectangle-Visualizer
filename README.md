@@ -21,7 +21,9 @@ Trade-Rectangle Visualizer is a utility class that makes automatic trading easy 
 
 **How does my script make your life easier?** Instead of digging through countless tabs and sub-windows on dozens of charts, my script draws coloured rectangles and lines displaying profitable trades and loses directly on the graph. Just switch between your instrument charts to see the recents profits, loses, trading statistics.
 <div markdown="1">
+
 Have **fun!**
+
 </div>
 
 ## 2. Table of Contents
