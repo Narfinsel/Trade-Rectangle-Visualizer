@@ -162,7 +162,7 @@ void OnDeinit (const int reason){
 		</td>
 	  </tr>
 	  <tr>
-		<td> <strong>Draw Options<br> Rect/Line</strong> </td>
+		<td> <strong>Draw <br>Options <br>Rect/Line</strong> </td>
 		<td> <img src="/img/settings/draw-rect-and-line.png"><br> <i>Draw Rectangle and line.</i><br>
 			<code>
 			rectVisualizer.setWhatToDraw (true, true);
